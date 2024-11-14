@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.instructions{
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: red;
+    background-color: rgba(114, 113, 113, 0.5);
+    border: 1px solid rgb(163, 162, 162);
+    padding: 1em;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    cursor: default;
+}
+
+.player1{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30vh;
+    top: 68%;
+}
+.player2{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30vh;
+    width: 10%;
+    right: 0%;
+    top: 68%;
+    transform: rotateY(180deg);
+}
